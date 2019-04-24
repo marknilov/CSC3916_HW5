@@ -1,27 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import MovieHeader from './components/movieheader';
+import MovieList from './components/movielist';
+import Movie from './components/movie';
+import Authentication from './components/authentication';
+import {HashRouter,Route} from 'react-router-dom';
+import { Provider } from 'react-redux'
+import store from './stores/store'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-Title">Welcome to React - Deployed to github</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//add routing configuration
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+            <Provider store={store}>
+            <HashRouter>
+            <div>
+            <MovieHeader />
+            <Route exact path="/" render={()=><MovieList />}/>
+        <Route path="/movielist" render={()=><MovieList />}/>
+        <Route path="/movie/:movieId" render={()=><Movie />}/>
+        <Route path="/signin" render={()=><Authentication />}/>
+        </div>
+        </HashRouter>
+        </Provider>
+        </div>
+    );
+    }
 }
 
 export default App;
