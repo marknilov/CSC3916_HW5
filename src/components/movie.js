@@ -1,13 +1,14 @@
 import React, { Component }  from 'react';
 import {connect} from "react-redux";
-//import { Glyphicon, Panel, ListGroup, ListGroupItem } from 'react-bootstrap'
+import { Glyphicon, Panel, ListGroup, ListGroupItem } from 'react-bootstrap'
 import { Image } from 'react-bootstrap'
 import { withRouter } from "react-router-dom";
 import {fetchMovie} from "../actions/movieActions";
 
-import ListGroup from 'react-bootstrap/ListGroup'
-import ListGroupItem from 'react-bootstrap/ListGroupItem'
-import Bootstrap from "react-bootstrap";
+//import ListGroup from 'react-bootstrap/ListGroup'
+//import ListGroupItem from 'react-bootstrap/ListGroupItem'
+//import Bootstrap from "react-bootstrap";
+
 //support routing by creating a new component
 
 class Movie extends Component {

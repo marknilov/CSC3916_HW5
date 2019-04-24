@@ -1,12 +1,12 @@
 import React, { Component} from 'react';
 import { submitRegister } from '../actions/authActions';
 import { connect } from 'react-redux';
-//import { Col, Form, FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
+import { Col, Form, FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
 
-import Col from 'react-bootstrap/Col'
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
-import Bootstrap from "react-bootstrap";
+//import Col from 'react-bootstrap/Col'
+//import Form from 'react-bootstrap/Form'
+//import Button from 'react-bootstrap/Button'
+//import Bootstrap from "react-bootstrap";
 
 class Register extends Component {
 

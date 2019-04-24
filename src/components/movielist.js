@@ -4,9 +4,10 @@ import { setMovie } from '../actions/movieActions';
 import {connect} from "react-redux";
 import { Image } from 'react-bootstrap'
 import { Carousel } from 'react-bootstrap'
-//import { Glyphicon } from 'react-bootstrap'
+import { Glyphicon } from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap';
-import Bootstrap from "react-bootstrap";
+
+//import Bootstrap from "react-bootstrap";
 
 //require a callback function to be sent to MovieList to update the header subtitle
 
