@@ -7,7 +7,7 @@ import { Col, Form, FormGroup, FormControl, ControlLabel, Button } from 'react-b
 //import Form from 'react-bootstrap/Form'
 //import Button from 'react-bootstrap/Button'
 //import Bootstrap from "react-bootstrap";
-
+//asdasd
 class Register extends Component {
 
     constructor(){
