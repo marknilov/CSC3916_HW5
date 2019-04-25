@@ -61,6 +61,7 @@ class Register extends Component {
 
             <FormGroup controlId="password">
             <Col componentClass={ControlLabel} sm={2}>
+
             Password
             </Col>
             <Col sm={10}>
