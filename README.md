@@ -1,3 +1,6 @@
+React HW 5, Does not seem to communicate with my HW4, not working correctly at the moment.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
