@@ -31,7 +31,7 @@ export function setMovie(movie) {
 export function fetchMovies(){
     const env = runtimeEnv();
     return dispatch => {
-        return fetch(`${env.REACT_APP_API_URL}/movies`, {
+        return fetch(`${env.REACT_APP_API_URL}/movies?reviews=true`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
@@ -55,7 +55,7 @@ export function fetchMovies(){
 export function fetchMovie(title){
     const env = runtimeEnv();
     return dispatch => {
-        return fetch(`${env.REACT_APP_API_URL}/movies/${title}`, {
+        return fetch(`${env.REACT_APP_API_URL}/movies/${title}reviews=true`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
