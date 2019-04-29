@@ -64,7 +64,7 @@ const mapStateToProps = (state, ownProps) => {
     console.log(ownProps);
     return {
         selectedMovie: state.movie.selectedMovie,
-        title: ownProps.match.params.title
+        title: ownProps.match.params.movieTitle
     }
 }
 
