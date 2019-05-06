@@ -1,3 +1,4 @@
+/*
 import React, { Component } from 'react';
 import { submitLogin } from '../actions/authActions';
 import { connect } from 'react-redux';
@@ -74,3 +75,4 @@ const mapStateToProps = state => {
 }
 
 export default connect(mapStateToProps)(Login);
+*/
